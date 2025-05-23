@@ -1,6 +1,6 @@
 {
   "name": "lunr-results-render",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Render lunr search results in HTML",
   "type": "module",
   "exports": "./lib/lunr-results-render.js",

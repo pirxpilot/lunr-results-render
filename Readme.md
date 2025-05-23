@@ -1,7 +1,5 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][deps-image]][deps-url]
-[![Dev Dependency Status][deps-dev-image]][deps-dev-url]
+[![Build Status][build-image]][build-url]
 
 # lunr-results-render
 
@@ -16,23 +14,19 @@ $ npm install --save lunr-results-render
 ## Usage
 
 ```js
-var lunrResultsRender = require('lunr-results-render');
+const lunrResultsRender = require('lunr-results-render');
 
-lunrResultsRender('Rainbow');
+const index = lunr.Index.load(si.index);
+const results = index.search(query);
+lunrResultsRender(results, si.store);
 ```
 
 ## License
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/lunr-results-render.svg
+[npm-image]: https://img.shields.io/npm/v/lunr-results-render
 [npm-url]: https://npmjs.org/package/lunr-results-render
 
-[travis-url]: https://travis-ci.org/pirxpilot/lunr-results-render
-[travis-image]: https://img.shields.io/travis/pirxpilot/lunr-results-render.svg
-
-[deps-image]: https://img.shields.io/david/pirxpilot/lunr-results-render.svg
-[deps-url]: https://david-dm.org/pirxpilot/lunr-results-render
-
-[deps-dev-image]: https://img.shields.io/david/dev/pirxpilot/lunr-results-render.svg
-[deps-dev-url]: https://david-dm.org/pirxpilot/lunr-results-render?type=dev
+[build-url]: https://github.com/pirxpilot/lunr-results-render/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/lunr-results-render/check.yaml?branch=main

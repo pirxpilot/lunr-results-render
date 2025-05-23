@@ -1,5 +1,5 @@
-const { describe, it } = require('node:test');
-const padSlice = require('../lib/pad-slice');
+import { describe, it } from 'node:test';
+import { padSlice } from '../lib/pad-slice.js';
 
 describe('pad-slice', () => {
   const text =

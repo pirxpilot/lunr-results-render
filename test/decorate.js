@@ -1,5 +1,5 @@
-const { describe, it } = require('node:test');
-const decorate = require('../lib/decorate');
+import { describe, it } from 'node:test';
+import { decorate } from '../lib/decorate.js';
 
 describe('decorate', () => {
   const text = 'This is a not so long sentence.';

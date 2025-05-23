@@ -2,6 +2,8 @@
   "name": "lunr-results-render",
   "version": "1.0.0",
   "description": "Render lunr search results in HTML",
+  "type": "module",
+  "exports": "./lib/lunr-result-renderer.js",
   "author": {
     "name": "Damian Krzeminski",
     "email": "pirxpilot@furkot.com",
@@ -22,7 +24,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ],
   "devDependencies": {

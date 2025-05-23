@@ -15,17 +15,14 @@
     "search",
     "html"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "jshint": "^2.9.6",
-    "mocha": "^5.2.0",
-    "should": "^13.2.3"
-  },
   "scripts": {
     "test": "make check"
   },
   "files": [
     "index.js",
     "lib"
-  ]
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
 }
